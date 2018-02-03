@@ -1,0 +1,8 @@
+<head>
+  <script>
+    var urlParams = new URLSearchParams(window.location.search);
+    var token = urlParams.get('token')
+    document.write(`Thanks! Please paste the following into your conversation with HeyListen:<br><br>
+    !hey token ${token}`);
+  </script>
+</head>
