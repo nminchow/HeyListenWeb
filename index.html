@@ -13,7 +13,7 @@
         return data;
     }
     var urlParams = parseParms
-    var token = parseParms(window.location.hash.substr(1)).access_token;
+    var token = parseParms(window.location.hash.substr(1)).code;
     document.write(`Thanks! Please paste the following into your conversation with HeyListen:<br><br>
     !hey token ${token}`);
   </script>
