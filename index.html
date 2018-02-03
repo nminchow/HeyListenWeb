@@ -1,19 +1,7 @@
 <head>
   <script>
-    function parseParms(str) {
-        var pieces = str.split("&"), data = {}, i, parts;
-        // process each query pair
-        for (i = 0; i < pieces.length; i++) {
-            parts = pieces[i].split("=");
-            if (parts.length < 2) {
-                parts.push("");
-            }
-            data[decodeURIComponent(parts[0])] = decodeURIComponent(parts[1]);
-        }
-        return data;
-    }
-    var urlParams = parseParms
-    var token = parseParms(window.location.hash.substr(1)).code;
+    var urlParams = new URLSearchParams(window.location.search);
+    var token = urlParams.get('code')
     document.write(`Thanks! Please paste the following into your conversation with HeyListen:<br><br>
     !hey token ${token}`);
   </script>
