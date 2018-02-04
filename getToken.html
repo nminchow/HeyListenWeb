@@ -42,7 +42,7 @@
 <script>
   var urlParams = new URLSearchParams(window.location.search);
   var token = urlParams.get('code')
-  document.getElementById("token").value = token;
+  document.getElementById("token").value = `!hey token ${token}`;
   new Clipboard('#token');
 </script>
 </body>
