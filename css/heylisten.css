@@ -89,6 +89,12 @@ input[readonly] {
   }
 }
 
+@media (max-width: 450px) {
+  .welcome h1 {
+    font-size: 4.0rem;
+  }
+}
+
 .welcome .inner-wrapper {
   z-index: 1;
 }
