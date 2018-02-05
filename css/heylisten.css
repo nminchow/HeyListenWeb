@@ -179,7 +179,7 @@ input[readonly] {
 }
 
 .logo .inner {
-  padding-left: 140px;
+  margin-left: 140px;
 }
 
 @-webkit-keyframes float {
